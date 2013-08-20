@@ -1,17 +1,12 @@
-<?php echo $this->session->userdata('assets'); ?>
-<script type="text/javascript">
-	var myLayout; // a var is required because this page utilizes: myLayout.allowOverflow() method
+<?php //echo $this->session->userdata('assets'); ?>
 
-	$(document).ready(function () {
-		myLayout = $('body').layout({
-			// enable showOverflow on west-pane so popups will overlap north pane
-			west__showOverflowOnHover: true
-
-		//,	west__fxSettings_open: { easing: "easeOutBounce", duration: 750 }
-		});
- 	});
-
-	</script>
+<link rel="stylesheet" href='<?php echo base_url();?>assets/styles/styles.css' />
+<link rel="stylesheet" href='<?php echo base_url();?>assets/styles/bootstrap.css' />
+<link rel="stylesheet" href='<?php echo base_url();?>assets/styles/bootstrap-responsive.css' />
 
 
+<script src='<?php echo base_url();?>assets/scripts/jquery-1.10.2.min.js'></script>
+<script src='<?php echo base_url();?>assets/scripts/highcharts/highcharts.js'></script>
+<script src='<?php echo base_url();?>assets/scripts/highcharts/modules/exporting.js'></script>
+<script src='<?php echo base_url();?>assets/scripts/bootstrap.js'></script>
 	<title><?php echo $title; ?></title>
