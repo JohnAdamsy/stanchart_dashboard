@@ -1,11 +1,11 @@
 <?php
 namespace models\Entities;
 
-/**
- * @Entity
- * @Table(name="years")
- */
-class E_Years_
+	/**
+	 * @Entity
+	 * @Table(name="years")
+	 */
+class E_Year
 {
     /**
      * @var integer $yearid

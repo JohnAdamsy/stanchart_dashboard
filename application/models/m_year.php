@@ -14,13 +14,20 @@ class M_Year extends MY_Model {
 	}
 
 	public function getAllYears() {
-		$year = $this -> em -> getRepository('E_Test')->findAll();
+		try{
+		$year = $this -> em -> getRepository('models\Entities\e_year')->findAll();
 		//$query->setParameter('fname','%'.$options['keyword'].'%');
 
-		$results = $year -> getYearname();
+		$results = $year;
 
 		// die(var_dump($this->formRecords));
 		var_dump($results) ;
+			
+		}catch(Exception $ex){
+			//do nothing
+			die($ex->getMessage());
+		}
+		
 	}
 
 	public function setMFLCode() {
